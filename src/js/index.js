@@ -34,6 +34,10 @@ $(document).ready(function () {
 		divs.eq(3).hide()
 		divs.eq(4).show() // show next
 	})
+	$('.test').click(function () {
+		localStorage.clear()
+		location.reload()
+	})
 
 	// CHECKBOXES
 	// PHONE
