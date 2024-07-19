@@ -62,19 +62,21 @@ gulp.task('html:docs', function () {
 })
 
 gulp.task('sass:docs', function () {
-	return gulp
-		.src('./src/scss/*.scss')
-		.pipe(changed('./docs/css/'))
-		.pipe(plumber(plumberNotify('SCSS')))
-		.pipe(sourceMaps.init())
-		.pipe(sassGlob())
-		.pipe(autoprefixer())
-		.pipe(webpCss())
-		.pipe(groupMedia())
-		.pipe(sass())
-		.pipe(csso())
-		.pipe(sourceMaps.write())
-		.pipe(gulp.dest('./docs/css/'))
+	return (
+		gulp
+			.src('./src/scss/*.scss')
+			.pipe(changed('./docs/css/'))
+			.pipe(plumber(plumberNotify('SCSS')))
+			.pipe(sourceMaps.init())
+			.pipe(sassGlob())
+			.pipe(autoprefixer())
+			//.pipe(webpCss())
+			//.pipe(groupMedia())
+			.pipe(sass())
+			.pipe(csso())
+			.pipe(sourceMaps.write())
+			.pipe(gulp.dest('./docs/css/'))
+	)
 })
 
 gulp.task('images:docs', function () {

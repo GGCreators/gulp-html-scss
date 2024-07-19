@@ -1,10 +1,38 @@
 /* Base */
-@import "./base/reset";
-@import "./base/vars";
-@import "./base/base";
-@import "./base/utils";
-@import "./base/containers";
-@import "./base/sticky-footer";
+@import './base/reset';
+@import './base/vars';
+@import './base/base';
+@import './base/utils';
+@import './base/containers';
+@import './base/sticky-footer';
 
 /* Blocks */
-@import "./blocks/*.scss";
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
+.steps {
+	height: 100vh;
+}
+
+.form-inline {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	.form-floating {
+		flex: 1;
+	}
+}
+
+.vertical-divider {
+	width: 1px;
+	height: 40px; /* Adjust height as needed */
+	background-color: #ced4da;
+	margin: 0 10px;
+}
+
+.form-check {
+	display: flex;
+	align-items: center;
+	.form-check-input {
+		margin-right: 10px;
+	}
+}

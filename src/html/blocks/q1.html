@@ -1,0 +1,125 @@
+<section class="steps step1">
+	<h1 class="h3 mb-3 fw-normal mt-5">Личные данные</h1>
+	<!--SIMPLE TEXT-->
+	<div class="form-floating" bis_skin_checked="1">
+		<input type="text" class="form-control" id="q1name" placeholder="" />
+		<label for="q1name">Просьба указать свое имя</label>
+	</div>
+	<!--DATE-->
+	<div class="form-floating" bis_skin_checked="1">
+		<input type="date" class="form-control" id="q1bdate" placeholder="" />
+		<label for="q1bdate">Просьба указать дату рождения</label>
+	</div>
+	<!--CHECKBOXSES WHO HIDE INPUTS-->
+	<h1 class="h5 mb-3 mt-3 fw-normal text-center">
+		Какой способ связи вы предпочитаете?
+	</h1>
+	<div class="form-inline">
+		<div class="form-check" bis_skin_checked="1">
+			<input
+				type="checkbox"
+				class="form-check-input"
+				id="q1CheckPhone"
+				placeholder=""
+			/>
+		</div>
+		<div class="form-floating">
+			<input
+				type="text"
+				class="form-control"
+				id="q1phone"
+				placeholder=""
+				disabled
+			/>
+			<label for="q1phone">Номер телефона</label>
+		</div>
+		<div class="vertical-divider"></div>
+		<div class="form-check" bis_skin_checked="1">
+			<input
+				type="checkbox"
+				class="form-check-input"
+				id="q1CheckWhatsapp"
+				placeholder=""
+			/>
+		</div>
+		<div class="form-floating">
+			<input
+				type="text"
+				class="form-control"
+				id="q1whatsapp"
+				placeholder=""
+				disabled
+			/>
+			<label for="q1whatsapp">Whatsapp</label>
+		</div>
+		<div class="vertical-divider"></div>
+		<div class="form-check" bis_skin_checked="1">
+			<input
+				type="checkbox"
+				class="form-check-input"
+				id="q1CheckTelegram"
+				placeholder=""
+			/>
+		</div>
+		<div class="form-floating">
+			<input
+				type="text"
+				class="form-control"
+				id="q1telegram"
+				placeholder=""
+				disabled
+			/>
+			<label for="q1telegram">Telegram</label>
+		</div>
+		<div class="vertical-divider"></div>
+		<div class="form-check" bis_skin_checked="1">
+			<input
+				type="checkbox"
+				class="form-check-input"
+				id="q1CheckEmail"
+				placeholder=""
+			/>
+		</div>
+		<div class="form-floating">
+			<input
+				type="text"
+				class="form-control"
+				id="q1email"
+				placeholder=""
+				disabled
+			/>
+			<label for="q1email">Email</label>
+		</div>
+	</div>
+	<!--TEXTAREA-->
+	<div class="" bis_skin_checked="1">
+		<h1 class="h5 mb-3 mt-3 fw-normal">
+			Пожалуйста, опишите своими словами, чем вам мешает лишний вес, почему вы
+			хотите получить бариатрическую операцию, и каких целей при этом хотите
+			достичь
+		</h1>
+		<textarea class="form-control" rows="2" id="q1target"></textarea>
+	</div>
+	<!--INLINE SHORT INPUTS-->
+	<div class="form-inline mt-3">
+		<div class="form-floating">
+			<input type="text" class="form-control" id="q1height" />
+			<label for="q1height">Ваш рост</label>
+		</div>
+		<div class="vertical-divider"></div>
+		<div class="form-floating">
+			<input type="text" class="form-control" id="q1weight" />
+			<label for="q1weight">Ваш вес</label>
+		</div>
+		<div class="vertical-divider"></div>
+		<div class="form-floating">
+			<input type="text" class="form-control" id="q1howweight" />
+			<label for="q1howweight"
+				>Какого веса хотите достичь после бариатрической операции</label
+			>
+		</div>
+	</div>
+	<button class="btn btn-primary w-100 py-2 my-3 next1" type="button">
+		Продолжить
+	</button>
+</section>
