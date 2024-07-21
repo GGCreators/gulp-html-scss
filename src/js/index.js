@@ -158,4 +158,7 @@ $(document).ready(function () {
 			$('#q2weightprofitanother').parent().hide()
 		}
 	})
+
+	// TOOLTIPS
+	$('[data-bs-toggle="tooltip"]').tooltip()
 })
